@@ -12,6 +12,9 @@
         android:theme="@style/Theme.BasicNotePad"
         tools:targetApi="31">
         <activity
+            android:name=".Activities.TelaLogin"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
