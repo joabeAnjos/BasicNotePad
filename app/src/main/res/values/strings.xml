@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BasicNotePad</string>
+    <string name="appName">Basic Control</string>
+    <string name="boasVindas">Bem Vindo</string>
+    <string name="login">Login</string>
+    <string name="txtCadastro">Já possui uma Conta? cadastre-se</string>
+
 </resources>

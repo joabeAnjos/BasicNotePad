@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_gradient_background"
+    android:background="@drawable/gradient_background_main"
     tools:context=".MainActivity">
 
     <ImageView
@@ -23,7 +23,7 @@
         android:id="@+id/txtBasic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Basic Control"
+        android:text="@string/appName"
         android:textSize="40sp"
         android:textColor="@color/dark_red"
         app:layout_constraintStart_toStartOf="@id/imageRetangular"

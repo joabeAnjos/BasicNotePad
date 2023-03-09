@@ -6,4 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".Activities.TelaLogin">
 
+    <ImageView
+        android:id="@+id/imageBasic"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/retangulo_tela_login_basic_control"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appName"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/imageBasic"
+        app:layout_constraintTop_toTopOf="@id/imageBasic"
+        app:layout_constraintEnd_toEndOf="@id/imageBasic"
+        app:layout_constraintBottom_toBottomOf="@id/imageBasic" />
+
+    <TextView
+        android:id="@+id/txtBemVindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boasVindas"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageBasic"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:src="@drawable/retangulo_activity_main"
+        app:tint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBemVindo"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="120dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/imageLogin"
+        app:layout_constraintEnd_toEndOf="@id/imageLogin"
+        app:layout_constraintTop_toTopOf="@id/imageLogin"
+        app:layout_constraintBottom_toBottomOf="@id/imageLogin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtCadastro"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageLogin"
+        android:layout_marginTop="60dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
