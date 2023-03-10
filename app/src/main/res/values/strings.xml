@@ -3,6 +3,8 @@
     <string name="appName">Basic Control</string>
     <string name="boasVindas">Bem Vindo</string>
     <string name="login">Login</string>
+    <string name="entrar">Entrar</string>
     <string name="txtCadastro">Já possui uma Conta? cadastre-se</string>
+    <string name="txtCadastrarClick">Acesse o Aplicativo Com \no Seu E-mail</string>
 
 </resources>

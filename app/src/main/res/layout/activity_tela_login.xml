@@ -7,15 +7,22 @@
     tools:context=".Activities.TelaLogin">
 
     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/retangulo_superior_inferior" />
+
+    <ImageView
         android:id="@+id/imageBasic"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:src="@drawable/retangulo_tela_login_basic_control"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="80dp" />
+        android:layout_marginEnd="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,31 +48,23 @@
         app:layout_constraintTop_toBottomOf="@id/imageBasic"
         android:layout_marginTop="100dp" />
 
-    <ImageView
-        android:id="@+id/imageLogin"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btLogin"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:src="@drawable/retangulo_activity_main"
-        app:tint="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtBemVindo"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="120dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/login"
-        android:textSize="35sp"
+        android:textSize="28sp"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@id/imageLogin"
-        app:layout_constraintEnd_toEndOf="@id/imageLogin"
-        app:layout_constraintTop_toTopOf="@id/imageLogin"
-        app:layout_constraintBottom_toBottomOf="@id/imageLogin" />
+        android:background="@drawable/retangulo_activity_main"
+        android:backgroundTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBemVindo"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="80dp"/>
 
     <TextView
+        android:id="@+id/txtCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txtCadastro"
@@ -73,8 +72,14 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageLogin"
+        app:layout_constraintTop_toBottomOf="@id/btLogin"
         android:layout_marginTop="60dp" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/retangulo_superior_inferior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
