@@ -16,7 +16,7 @@
     <ImageView
         android:id="@+id/imageBasic"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:src="@drawable/retangulo_tela_login_basic_control"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -95,7 +95,7 @@
         android:id="@+id/btEntrar"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:text="@string/entrar"
+        android:text="@string/bt_entrar"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:background="@drawable/retangulo_activity_main"

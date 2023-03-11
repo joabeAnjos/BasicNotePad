@@ -52,7 +52,7 @@
         android:id="@+id/btLogin"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:text="@string/login"
+        android:text="@string/bt_login"
         android:textSize="28sp"
         android:textColor="@color/white"
         android:background="@drawable/retangulo_activity_main"

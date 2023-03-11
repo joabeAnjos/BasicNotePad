@@ -2,9 +2,15 @@
     <string name="app_name">BasicNotePad</string>
     <string name="appName">Basic Control</string>
     <string name="boasVindas">Bem Vindo</string>
-    <string name="login">Login</string>
-    <string name="entrar">Entrar</string>
+
+    //TextViews
     <string name="txtCadastro">Já possui uma Conta? cadastre-se</string>
     <string name="txtCadastrarClick">Acesse o Aplicativo Com \no Seu E-mail</string>
+
+    //Botões
+    <string name="bt_login">Login</string>
+    <string name="bt_entrar">Entrar</string>
+
+
 
 </resources>
