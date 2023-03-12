@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1010992805000",
+    "project_id": "basic-control-722ed",
+    "storage_bucket": "basic-control-722ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010992805000:android:45fcacf16dfcda4ef0db3d",
+        "android_client_info": {
+          "package_name": "com.example.basicnotepad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010992805000-josuco2fmnms162tq65alosbi7ppm139.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAYmCWVn4-p-GQw73F8a-pVhmIk4xqv94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010992805000-josuco2fmnms162tq65alosbi7ppm139.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
