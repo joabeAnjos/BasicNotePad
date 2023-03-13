@@ -14,9 +14,21 @@
         android:theme="@style/Theme.BasicNotePad"
         tools:targetApi="31">
         <activity
-            android:name=".Activities.TelaPrincipal"
-            android:label=""
+            android:name=".Activities.TelaContatos"
             android:exported="false" />
+        <activity
+            android:name=".Activities.TelaMural"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaFrequencia"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaFaltas"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TelaPrincipal"
+            android:exported="false"
+            android:label="" />
         <activity
             android:name=".Activities.TelaCadastro"
             android:exported="false" />

@@ -48,6 +48,7 @@ class TelaCadastro : AppCompatActivity() {
     }
     private fun cadastro(view: View, email: String,senha: String,nome: String){
 
+
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,senha).addOnCompleteListener {
             if (it.isSuccessful){
                 DB.salvarDadosUsuario(nome)

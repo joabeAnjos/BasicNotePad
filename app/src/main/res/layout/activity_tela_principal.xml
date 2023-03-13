@@ -21,9 +21,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="50dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,6 +47,7 @@
         android:layout_marginTop="50dp"/>
 
     <ImageView
+        android:id="@+id/imageFrequencia"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:src="@drawable/frequencia_black"
