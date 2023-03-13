@@ -50,7 +50,7 @@
         android:layout_marginTop="20dp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editEmail"
+        android:id="@+id/emaillayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/txtClickCadastro"
@@ -60,22 +60,24 @@
         android:layout_marginTop="30dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="E-mail:" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editSenha"
+        android:id="@+id/senhalayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/editEmail"
+        app:layout_constraintTop_toBottomOf="@id/emaillayout"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginTop="15dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Senha:"/>
@@ -85,10 +87,11 @@
         android:id="@+id/progressBar"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:visibility="invisible"
         android:indeterminateTint="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editSenha"
+        app:layout_constraintTop_toBottomOf="@id/senhalayout"
         android:layout_marginTop="25dp" />
 
     <androidx.appcompat.widget.AppCompatButton
