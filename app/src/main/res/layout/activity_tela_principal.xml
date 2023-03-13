@@ -6,6 +6,82 @@
     android:layout_height="match_parent"
     tools:context=".Activities.TelaPrincipal">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
 
+    <ImageView
+        android:id="@+id/retanguloNameApp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/retangulo_tela_login_basic_control"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appName"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/retanguloNameApp"
+        app:layout_constraintEnd_toEndOf="@id/retanguloNameApp"
+        app:layout_constraintTop_toTopOf="@id/retanguloNameApp"
+        app:layout_constraintBottom_toBottomOf="@id/retanguloNameApp" />
+
+    <ImageView
+        android:id="@+id/imageFaltas"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/faltas_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideLine"
+        app:layout_constraintTop_toBottomOf="@id/retanguloNameApp"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/frequencia_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideLine"
+        app:layout_constraintTop_toBottomOf="@id/imageFaltas"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:id="@+id/imageMural"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/mural_black"
+        app:layout_constraintStart_toStartOf="@id/guideLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/retanguloNameApp"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:id="@+id/imageContatos"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/contatos_black"
+        app:layout_constraintStart_toStartOf="@id/guideLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageMural"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:id="@+id/superiorInferior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/retangulo_superior_inferior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
