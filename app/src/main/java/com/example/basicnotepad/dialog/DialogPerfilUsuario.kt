@@ -24,8 +24,11 @@ class DialogPerfilUsuario(private val activity: Activity) {
     fun recuperarDadosUsuario(){
         val nome = binding.txtperfil
         val email = binding.txtEmail
+        val curso = binding.txtCurso
+        val turma = binding.txtTurma
+        val periodo = binding.txtPeriodo
         val db = BancoDados()
-        db.recuperarDadosUsuarioPerfil(nome,email)
+        db.recuperarDadosUsuarioPerfil(nome,email,curso,turma,periodo)
 
         binding.btSair.setOnClickListener {
             FirebaseAuth.getInstance().signOut()

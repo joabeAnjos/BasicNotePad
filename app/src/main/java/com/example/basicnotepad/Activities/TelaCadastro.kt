@@ -35,6 +35,9 @@ class TelaCadastro : AppCompatActivity() {
             val email = binding.editEmail.text.toString()
             val senha = binding.editSenha.text.toString()
             val nome = binding.editNome.text.toString()
+            val curso = binding.editCurso.text.toString()
+            val turma = binding.editTurma.text.toString()
+            val periodo = binding.editPeriodo.text.toString()
 
             if (email.isEmpty() || senha.isEmpty()){
                 val snackbar = Snackbar.make(it,"Preencha todos os Dados!",Snackbar.LENGTH_SHORT)
@@ -42,16 +45,15 @@ class TelaCadastro : AppCompatActivity() {
                 snackbar.setAnchorView(it)
                 snackbar.show()
             }else{
-                cadastro(it,email,senha,nome)
+                cadastro(it,email,senha,nome,curso,turma,periodo)
             }
         }
     }
-    private fun cadastro(view: View, email: String,senha: String,nome: String){
-
+    private fun cadastro(view: View, email: String,senha: String,nome: String,curso: String,turma: String,periodo: String){
 
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,senha).addOnCompleteListener {
             if (it.isSuccessful){
-                DB.salvarDadosUsuario(nome)
+                DB.salvarDadosUsuario(nome,curso,turma,periodo)
                 binding.progressBar.visibility = View.VISIBLE
                 val snackbar = Snackbar.make(view,"Cadastro realizado com Sucesso!",Snackbar.LENGTH_SHORT)
                 snackbar.setAnchorView(view)

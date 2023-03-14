@@ -102,7 +102,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editCurso"
+        android:id="@+id/cursoLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Curso:"
@@ -114,39 +114,42 @@
         android:layout_marginTop="7dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editCurso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editTurma"
+        android:id="@+id/turmaLayout"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:hint="Turma:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/editPeriodo"
-        app:layout_constraintTop_toBottomOf="@id/editCurso"
+        app:layout_constraintTop_toBottomOf="@id/cursoLayout"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="7dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTurma"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editPeriodo"
+        android:id="@+id/periodoLayout"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:hint="Período:"
-        app:layout_constraintStart_toEndOf="@id/editTurma"
+        app:layout_constraintStart_toEndOf="@id/turmaLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editCurso"
+        app:layout_constraintTop_toBottomOf="@id/cursoLayout"
         android:layout_marginEnd="30dp"
         android:layout_marginTop="7dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPeriodo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -158,7 +161,7 @@
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTurma"
+        app:layout_constraintTop_toBottomOf="@id/turmaLayout"
         android:layout_marginTop="5dp"
         android:indeterminateTint="@color/black" />
 
@@ -173,7 +176,7 @@
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTurma"
+        app:layout_constraintTop_toBottomOf="@id/turmaLayout"
         android:layout_marginStart="85dp"
         android:layout_marginEnd="85dp"
         android:layout_marginTop="110dp" />

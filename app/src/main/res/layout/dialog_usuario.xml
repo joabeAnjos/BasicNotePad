@@ -6,13 +6,13 @@
 
     <ImageView
         android:id="@+id/imagePerfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/dialog_imagem"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="10dp" />
 
     <ImageView
         android:id="@+id/perfil"
@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imagePerfil"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="60dp" />
+        android:layout_marginTop="15dp" />
 
     <ImageView
         android:id="@+id/email"
@@ -32,7 +32,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/perfil"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:id="@+id/curso"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/escola"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:id="@+id/turma"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/turma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/curso"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:id="@+id/periodo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/periodo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turma"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp" />
 
     <TextView
         android:id="@+id/txtperfil"
@@ -58,6 +88,41 @@
         app:layout_constraintBottom_toBottomOf="@id/email"
         android:layout_marginStart="10dp" />
 
+    <TextView
+        android:id="@+id/txtCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/curso"
+        app:layout_constraintTop_toTopOf="@id/curso"
+        app:layout_constraintBottom_toBottomOf="@id/curso"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/txtTurma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/turma"
+        app:layout_constraintTop_toTopOf="@id/turma"
+        app:layout_constraintBottom_toBottomOf="@id/turma"
+        android:layout_marginStart="10dp" />
+    <TextView
+        android:id="@+id/txtPeriodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/periodo"
+        app:layout_constraintTop_toTopOf="@id/periodo"
+        app:layout_constraintBottom_toBottomOf="@id/periodo"
+        android:layout_marginStart="10dp" />
+
     <Button
         android:id="@+id/btSair"
         android:layout_width="match_parent"
@@ -67,13 +132,12 @@
         android:background="@drawable/retangulo_activity_main"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/periodo"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="15dp"
-        />
+        android:layout_marginBottom="5dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
